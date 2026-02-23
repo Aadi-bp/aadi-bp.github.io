@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -297,7 +298,7 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px}
     </div>
     <div>
       <div class="label">Start Time</div>
-      <h3>16/02/2026 03:00PM</h3>
+      <h3>23/02/2026 01:00PM</h3>
     </div>
   </div>
 </div>
@@ -305,10 +306,10 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px}
 <div class="card" style="margin-top:32px">
   <div class="label">Last Deposit</div>
   <div class="tx">
-    <div class="tx-row"><span>16/02/2026</span><span style="color:var(--green)">₹17,700</span></div>
+    <div class="tx-row"><span>23/02/2026</span><span style="color:var(--green)">₹19,470</span></div>
   </div>
 </div>
-<button class="withdraw-btn" onclick="openWithdrawAuth()">Withdraw</button>
+<!-- <button class="withdraw-btn" onclick="openWithdrawAuth()">Withdraw</button> -->
 </div>
 
 <!-- Withdraw Locked Popup -->
@@ -434,9 +435,9 @@ function closeWithdrawLocked(){
   document.getElementById("withdrawLocked").style.display = "none";
 }
 
-const startTime = new Date("2026-02-16T10:00:00").getTime();
+const startTime = new Date("2026-02-23T10:00:00").getTime();
 const totalDuration = 7 * 24 * 60 * 60 * 1000;
-const startAmount = 17700;
+const startAmount = 19470;
 const totalProfit = startAmount * 0.10;
 
 // clock
