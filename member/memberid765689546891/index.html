@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -294,11 +295,11 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px}
     </div>
     <div>
       <div class="label">Duration</div>
-      <h3>7 Days</h3>
+      <h3>31 Days</h3>
     </div>
     <div>
       <div class="label">Start Time</div>
-      <h3>23/02/2026 01:00PM</h3>
+      <h3>06/03/2026 01:00PM</h3>
     </div>
   </div>
 </div>
@@ -306,10 +307,10 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px}
 <div class="card" style="margin-top:32px">
   <div class="label">Last Deposit</div>
   <div class="tx">
-    <div class="tx-row"><span>23/02/2026</span><span style="color:var(--green)">₹33,000</span></div>
+    <div class="tx-row"><span>06/03/2026</span><span style="color:var(--green)">₹33,000</span></div>
   </div>
 </div>
-<button class="withdraw-btn" onclick="openWithdrawAuth()">Withdraw</button>
+<!-- <button class="withdraw-btn" onclick="openWithdrawAuth()">Withdraw</button> -->
 </div>
 
 <!-- Withdraw Locked Popup -->
@@ -435,10 +436,11 @@ function closeWithdrawLocked(){
   document.getElementById("withdrawLocked").style.display = "none";
 }
 
-const startTime = new Date("2026-02-23T10:00:00").getTime();
-const totalDuration = 10 * 24 * 60 * 60 * 1000;
+const startTime = new Date("2026-03-06T10:00:00").getTime();
+const totalDuration = 31 * 24 * 60 * 60 * 1000;
 const startAmount = 33000;
-const totalProfit = startAmount * 0.08;
+const totalProfit = startAmount * 5;
+// const totalProfit = startAmount * 0.08;
 
 // clock
 setInterval(()=>{
@@ -485,7 +487,7 @@ setInterval(()=>{
     (progress * 100) + "%";
 
   document.getElementById("dayInfo").innerText =
-    "Day " + (progress * 10).toFixed(2) + " / 10";
+    "Day " + (progress * 31).toFixed(2) + " / 31";
 
   chart.data.labels.push("");
   chart.data.datasets[0].data.push(balance);
