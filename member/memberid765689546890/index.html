@@ -281,7 +281,7 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px}
     <div class="progress">
       <div id="progressBar" class="bar"></div>
     </div>
-    <div class="label" id="dayInfo">Day 0 / 21</div>
+    <div class="label" id="dayInfo">Day 0 / 11</div>
   </div>
 </div>
 
@@ -294,7 +294,7 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px}
     </div>
     <div>
       <div class="label">Duration</div>
-      <h3>21 Days</h3>
+      <h3>11 Days</h3>
     </div>
     <div>
       <div class="label">Start Time</div>
@@ -485,7 +485,7 @@ setInterval(()=>{
     (progress * 100) + "%";
 
   document.getElementById("dayInfo").innerText =
-    "Day " + (progress * 21).toFixed(2) + " / 21";
+    "Day " + (progress * 11).toFixed(2) + " / 11";
 
   chart.data.labels.push("");
   chart.data.datasets[0].data.push(balance);
